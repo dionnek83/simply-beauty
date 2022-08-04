@@ -1,0 +1,40 @@
+.account {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.account h1 {
+  font-family: var(--niconne);
+  font-weight: lighter;
+  font-size: 2.7rem;
+  text-align: center;
+}
+.account input {
+  display: block;
+  padding: 0.3rem 2rem 0.3rem 0.3rem;
+  margin: 0.5rem 0;
+}
+.account form {
+  margin: 2rem 0;
+}
+
+.account button {
+  background-color: var(--dark-brown);
+  color: white;
+  padding: 0.4rem 1.4rem;
+  border: none;
+  font-family: var(--forum);
+  font-size: 1.2rem;
+}
+.acc-link {
+  text-decoration: none;
+  color: black;
+}
+.acc-link:hover {
+  color: var(--dark-brown);
+}
+.account p {
+  color: rgb(49, 47, 47);
+}

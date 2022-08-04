@@ -1,0 +1,20 @@
+/* CAROUSAL STYLES  */
+.rec.rec-arrow {
+  display: none;
+}
+.rec.rec-dot.rec-dot_active {
+  background-color: var(--dark-brown);
+  box-shadow: 0 0 1px 3px var(--dark-brown);
+}
+@media only screen and (min-width: 769px) {
+  .rec.rec-arrow {
+    display: block;
+    color: black;
+    box-shadow: 0 0 2px 0px black;
+    background-color: white;
+  }
+  .rec.rec-arrow:hover {
+    background-color: var(--dark-brown);
+    color: white;
+  }
+}

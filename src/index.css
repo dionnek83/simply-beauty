@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Forum&family=Niconne&family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app,
+#app > div {
+  height: 100%;
+}
+:root {
+  --forum: "Forum", cursive;
+  --niconne: "Niconne", cursive;
+  --poppins: "Poppins", sans-serif;
+  --main-color: rgb(176, 91, 59);
+  --dark-brown: rgba(117, 52, 34, 1);
+  --white: white;
+}

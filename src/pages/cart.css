@@ -1,0 +1,135 @@
+.cart {
+  padding: 5rem 0 12rem;
+  text-align: center;
+}
+.cart h1 {
+  font-family: var(--niconne);
+  font-weight: lighter;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.cart button {
+  padding: 0.5rem 1.5rem;
+  background-color: var(--dark-brown);
+  color: white;
+  border: none;
+}
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border: none;
+  font-size: 1.3rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+.cart-items {
+  padding: 1.5rem 2rem 0;
+  min-height: calc(100vh - 250px);
+}
+
+.cart-items h1 {
+  font-family: var(--niconne);
+  font-size: 2.5rem;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+}
+
+.product {
+  display: flex;
+  background-color: whitesmoke;
+  padding: 1rem 1rem 1rem;
+  max-width: 600px;
+  position: relative;
+  margin: 0 auto 1rem;
+}
+.product img {
+  width: 30%;
+  width: 40%;
+  height: fit-content;
+  margin-right: 0.8rem;
+}
+.product-quantity {
+  display: flex;
+}
+.product-quantity input {
+  padding: 0 0.5rem;
+}
+.receipt {
+  background-color: whitesmoke;
+  /* min-width: 200px; */
+  width: 300px;
+  max-height: 300px;
+  padding: 1rem 1rem 3rem;
+  margin: 1rem auto;
+}
+.receipt button {
+  background-color: var(--dark-brown);
+  color: white;
+  padding: 0.6rem 2.5rem;
+  border: none;
+  font-size: 1rem;
+  margin: 2rem auto;
+  display: block;
+  border-radius: 3px;
+}
+tr {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.total {
+  margin-top: 3rem;
+}
+table {
+  width: 100%;
+}
+.receipt h3 {
+  font-size: 1.5rem;
+}
+.product p {
+  margin: 0.8rem 0;
+}
+
+.cart-page {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.empty-cart {
+  padding: 3rem 1rem 0;
+  text-align: center;
+}
+.empty-cart h1 {
+  font-size: 3.5rem;
+}
+.empty-cart button {
+  padding: 1rem 2rem;
+  background-color: var(--dark-brown);
+  color: white;
+  border: none;
+  font-size: 1rem;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+@media only screen and (max-width: 375px) {
+  .receipt {
+    max-width: 250px;
+  }
+}
+@media only screen and (min-width: 1214px) {
+  .cart-items {
+    padding: 3rem 5rem 1rem;
+  }
+  .cart-page {
+    grid-template-columns: 600px 400px;
+    grid-template-rows: auto;
+    justify-content: space-between;
+  }
+  .product {
+    width: 600px;
+  }
+}

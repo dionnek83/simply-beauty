@@ -1,0 +1,24 @@
+.shop-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.shop-products {
+  display: grid;
+  justify-content: center;
+  /* padding: 0 2rem; */
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: 500px;
+}
+
+.shop-products-container {
+  padding: 5rem 0 8rem;
+}
+.sort-by {
+  float: right;
+  /* margin-bottom: 3rem; */
+}
+
+.products-product {
+  padding: 2rem 2rem 0 0;
+  /* border: 2px solid red; */
+}

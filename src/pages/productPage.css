@@ -1,0 +1,129 @@
+.product-details-page {
+  padding: 4rem;
+}
+.product-details-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+  justify-self: center;
+}
+.product-details-image-container {
+  margin: 0 auto;
+}
+.product-details-image-container img {
+  width: 100%;
+  max-width: 400px;
+}
+.product-details-content-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.length-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.hair-length {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+.length {
+  padding: 0.8rem;
+  margin: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.not-chosen {
+  background-color: rgb(196, 193, 193);
+  color: black;
+  padding: 0.8rem;
+  margin: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.chosen {
+  background-color: var(--dark-brown);
+  color: white;
+  padding: 0.8rem;
+  margin: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+span {
+  cursor: pointer;
+}
+.total-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.related-products {
+  display: grid;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.related-products-container h2 {
+  text-align: center;
+  margin: 4rem 0;
+}
+.quantity {
+  font-size: 1.3rem;
+}
+.quantity select {
+  margin-left: 1rem;
+}
+.cart-button {
+  padding: 0.8rem;
+  background-color: var(--dark-brown);
+  border-radius: 50%;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+.quantity-price-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2rem 0 0;
+}
+
+@media only screen and (min-width: 700px) {
+  .related-products {
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 500px;
+    column-gap: 2rem;
+  }
+
+  .length-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .product-details-container {
+    grid-template-columns: 400px 400px;
+    margin: 0 auto;
+    grid-template-rows: 400px;
+    gap: 80px;
+  }
+  .product-details-image-container {
+    margin: 0 auto;
+  }
+  .related-products {
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 500px;
+    gap: 30px;
+  }
+  .related-products-container {
+    padding: 2rem 0 8rem;
+  }
+  .length-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}

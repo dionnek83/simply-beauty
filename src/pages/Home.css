@@ -1,0 +1,339 @@
+/* ================================= HERO SECTION ================================= */
+.hero,
+.about-us {
+  background-color: var(--main-color);
+  padding: 0 1rem;
+}
+.hero p,
+button .about-us {
+  color: white;
+  font-family: var(--poppins);
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.8rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.hero button,
+.about-us button {
+  background-color: var(--dark-brown);
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin-top: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.shop-link {
+  color: white;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: rgb(143, 66, 44);
+}
+
+/* ================================= CATEGORIES SECTION ================================= */
+
+.about-us {
+  padding: 2rem;
+}
+.categories {
+  padding: 4rem 2rem 5rem;
+}
+.categories h2,
+.about-us h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: var(--niconne);
+  font-weight: lighter;
+  font-size: 2.8rem;
+}
+
+.about-us h2::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: white;
+  margin: 0.5rem auto;
+}
+
+.categories h2::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: black;
+  margin: 0.5rem auto;
+}
+
+.category-container {
+  padding-bottom: 2.5rem;
+  position: relative;
+}
+.category-container img {
+  width: 100%;
+}
+
+.categories h3 {
+  position: absolute;
+  background-color: white;
+  color: black;
+  padding: 1rem 0.8rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8rem;
+  font-family: var(--poppins);
+}
+.categories-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+  justify-self: center;
+}
+
+/* ================================= ABOUT US SECTION ================================= */
+.about-us {
+  color: white;
+  text-align: center;
+  font-family: var(--poppins);
+  font-weight: bold;
+  margin: 0 2rem;
+}
+.about-us p {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+/* ================================= PRODUCTS SECTION ================================= */
+
+.products {
+  padding: 2rem 0.5rem;
+}
+.product-card {
+  margin-bottom: 2rem;
+  padding: 1.5rem 1.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+  max-width: 300px;
+  min-width: 200px;
+  height: auto;
+}
+.product-card img {
+  width: 100%;
+}
+.product-card p {
+  margin: 0.5rem 0;
+  font-family: var(--poppins);
+}
+.price {
+  font-weight: bold;
+  font-family: var(--poppins);
+}
+
+.product-card button {
+  color: var(--main-color);
+  background-color: transparent;
+  border: none;
+  font-size: 1.4rem;
+  margin: 0 0.2rem;
+}
+
+.view-all {
+  background-color: var(--dark-brown);
+  padding: 0.8rem 1rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1rem;
+
+  font-family: var(--poppins);
+  color: white;
+}
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+  justify-self: center;
+}
+.button-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+.options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  transform: translate(5px);
+  box-shadow: 2px 2px 26px 0px rgba(0, 0, 0, 0.3);
+}
+/* ================================= PURCHASE SECTION ================================= */
+
+.purchase {
+  background-image: url("../images/bg-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--main-color);
+  font-family: var(--poppins);
+  font-weight: bold;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.dark-text {
+  color: var(--dark-brown);
+  font-size: 1.5rem;
+}
+
+.grey-text {
+  color: rgb(190, 190, 190);
+  max-width: 45rem;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.purchase h1 {
+  color: white;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+}
+
+.purchase button {
+  background-color: var(--dark-brown);
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1rem;
+  margin-top: 2rem;
+  font-family: var(--poppins);
+  color: white;
+}
+
+/* ================================= PARAGRAPHS SECTION ================================= */
+.paragraphs {
+  padding: 6rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+  justify-self: center;
+}
+
+.sub-heading {
+  font-family: var(--niconne);
+  font-size: 2rem;
+}
+.paragraphs h2 {
+  font-family: var(--poppins);
+}
+
+.paragraph-container {
+  margin-bottom: 5rem;
+}
+
+.content {
+  color: rgb(92, 91, 91);
+  line-height: 1.4;
+  font-family: var(--poppins);
+  margin-top: 1rem;
+}
+/* ================================= BREAKPOINTS ================================= */
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    flex-direction: row;
+  }
+  .hero-text {
+    padding-top: 3rem;
+  }
+  .hero-text {
+    padding: 2rem 0 0;
+    text-align: left;
+    width: 620px;
+  }
+  .hero-text p {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+  .categories-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .category-container img {
+    height: 400px;
+    object-fit: cover;
+  }
+  .products {
+    padding: 6rem 2rem 4rem;
+  }
+  .product-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+    justify-self: center;
+  }
+  .product-card {
+    width: 350px;
+    height: 400px;
+    margin: 0 1rem 2rem;
+  }
+  .paragraphs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer {
+    flex-direction: row;
+  }
+  .socials {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  img {
+    width: 100%;
+  }
+  .hero-text {
+    padding: 2rem 0 0;
+    text-align: left;
+    width: 620px;
+  }
+  .hero-text p {
+    font-size: 3rem;
+    text-align: left;
+  }
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+  }
+  .categories-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .paragraphs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
