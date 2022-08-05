@@ -58,7 +58,7 @@ class ProductPage extends Component {
         }),
     ]);
   }
-
+ 
   sendToCart(id, price, quantity) {
     if (this.state.clicked === false || this.state.clicked === null) {
       NotificationManager.error(

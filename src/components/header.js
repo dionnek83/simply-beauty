@@ -39,7 +39,8 @@ const Header = (props) => {
     setSearchData([]);
     const search = async () => {
       const { data } = await axios.get(
-        "https://simply-beauty-php.herokuapp.com/api/search.php?query=" + query
+        "https://cors-anywhere.herokuapp.com/https://simply-beauty-php.herokuapp.com/api/search.php?query=" +
+          query
       );
 
       setSearchData(data);
