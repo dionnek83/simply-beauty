@@ -9,7 +9,8 @@ import {
 } from "react-notifications";
 import "react-notifications/lib/notifications.css";
 
-const API_PATH = "https://simply-beauty-php.herokuapp.com/api/addToCart.php";
+const API_PATH =
+  "https://cors-anywhere.herokuapp.com/https://simply-beauty-php.herokuapp.com/api/addToCart.php";
 
 class ProductPage extends Component {
   constructor(props) {
@@ -58,7 +59,7 @@ class ProductPage extends Component {
         }),
     ]);
   }
- 
+
   sendToCart(id, price, quantity) {
     if (this.state.clicked === false || this.state.clicked === null) {
       NotificationManager.error(
