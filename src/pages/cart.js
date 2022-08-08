@@ -22,7 +22,9 @@ class Cart extends React.Component {
           this.setState({ data: res.data });
         }),
       axios
-        .get("https://simply-beauty-php.herokuapp.com/api/Cost.php")
+        .get(
+          "https://cors-anywhere.herokuapp.com/https://simply-beauty-php.herokuapp.com/api/Cost.php"
+        )
         .then((res) => {
           this.setState({ totalCost: res.data });
           this.state.totalCost.map((cost) => {
