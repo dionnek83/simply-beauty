@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Simply Beauty Ecommerce website 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created with PHP, SQL and React and I designed the website using Figma.
 
-## Available Scripts
+![image](https://github.com/dionnek83/simply-beauty/assets/42995303/d14f3ac7-ab61-41dc-a8f9-24a0be750cb0)
 
-In the project directory, you can run:
+![image](https://github.com/dionnek83/simply-beauty/assets/42995303/8cd859b3-cff8-4026-8e3a-1a572dfd83ee)
+## Homepage
+The homepage displays information about the store such as the type of hair available, any current sale offers etc.
 
-### `npm start`
+![image](https://github.com/dionnek83/simply-beauty/assets/42995303/628c4e77-5e91-46f0-a029-733a17bfc6d8)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- The carousel which allows the user to browse through the current products stored in the database.
+- Once a carousel item is selected the user is directed to the product page.
+- Users can also search for a specific item. 
+ ![image](https://github.com/dionnek83/simply-beauty/assets/42995303/e2a8d887-a4a6-43a0-abf8-baa784d4104d)
+![image](https://github.com/dionnek83/simply-beauty/assets/42995303/4635d09b-f924-4ad3-a608-2103744c42d4)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Product page
 
-### `npm run build`
+This page displays all the hair lengths available. Once you select a length you can then select how many items they would like to purchase. It should be noted that the user can only add the item to the cart once a hair length and the quantity has been selected (by default one item is selected) by clicking on the cart button and the user will be notified that the item has been added to the cart. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://github.com/dionnek83/simply-beauty/assets/42995303/136b0cc1-5e9b-4dcb-b116-d921da1b7c5f)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+At the bottom of the page related products are displayed.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![image](https://github.com/dionnek83/simply-beauty/assets/42995303/d3dcb75a-21f1-42f4-be25-8d48449b7a9e)
 
-### `npm run eject`
+## Cart
+The cart displays all the items that were added to the cart and here users are able to:
+- Remove an item.
+- Update the quantity of each item.
+  
+On the right side of the page an order summary is displayed which totals the items in the cart. If there are no items in the cart the "Your cart is empty" is displayed. The start shopping button directs the user to the "Shop All" page
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![image](https://github.com/dionnek83/simply-beauty/assets/42995303/97ad006f-23de-4470-bca1-c7000366bb5d)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![image](https://github.com/dionnek83/simply-beauty/assets/42995303/99c56b45-568e-4d86-85d1-6fe074df3c3b)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Sign In Page 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Currently has no functionality. 
 
-## Learn More
+![image](https://github.com/dionnek83/simply-beauty/assets/42995303/f242111a-1364-4937-a723-4aa91c743738)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Shop All page 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This page displays all the products in the database, however I'm still working on this page as well as the sub-pages. 
 
-### Code Splitting
+![image](https://github.com/dionnek83/simply-beauty/assets/42995303/0edac6f2-0192-443f-b335-5d339351c4c9)
+![image](https://github.com/dionnek83/simply-beauty/assets/42995303/2b8fe1de-4bab-474e-9126-171f164d5281)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
