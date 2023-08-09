@@ -12,7 +12,7 @@ const CartItem = (props) => {
   function removeProduct() {
     axios
       .get(
-        "https://cors-anywhere.herokuapp.com/https://simply-beauty-php.herokuapp.com/api/deleteFromCart.php?id=" +
+        "https://simplybeauty.000webhostapp.com/beautyPHP/api/deleteFromCart.php?id=" +
           props.cartID
       )
       .then((res) => {
@@ -25,7 +25,7 @@ const CartItem = (props) => {
     setQty(quantity);
     axios
       .get(
-        "https://cors-anywhere.herokuapp.com/https://simply-beauty-php.herokuapp.com/api/updateQty.php?id=" +
+        "https://simplybeauty.000webhostapp.com/beautyPHP/api/updateQty.php?id=" +
           props.cartID +
           "&qty=" +
           quantity
@@ -39,7 +39,7 @@ const CartItem = (props) => {
   function updateCost(quantity) {
     axios
       .get(
-        "https://cors-anywhere.herokuapp.com/https://simply-beauty-php.herokuapp.com/api/updateCost.php?id=" +
+        "https://simplybeauty.000webhostapp.com/beautyPHP/api/updateCost.php?id=" +
           props.cartID +
           "&cost=" +
           quantity * props.cost

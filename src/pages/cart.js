@@ -17,13 +17,13 @@ class Cart extends React.Component {
   componentDidMount() {
     Promise.all([
       axios
-        .get("https://simply-beauty-php.herokuapp.com/api/getCartProducts.php")
+        .get("https://simplybeauty.000webhostapp.com/beautyPHP/api/getCartProducts.php")
         .then((res) => {
           this.setState({ data: res.data });
         }),
       axios
         .get(
-          "https://cors-anywhere.herokuapp.com/https://simply-beauty-php.herokuapp.com/api/Cost.php"
+          "https://simplybeauty.000webhostapp.com/beautyPHP/api/Cost.php"
         )
         .then((res) => {
           this.setState({ totalCost: res.data });

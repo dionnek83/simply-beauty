@@ -10,7 +10,7 @@ import {
 import "react-notifications/lib/notifications.css";
 
 const API_PATH =
-  "https://cors-anywhere.herokuapp.com/https://simply-beauty-php.herokuapp.com/api/addToCart.php";
+  "https://simplybeauty.000webhostapp.com/beautyPHP/api/addToCart.php";
 
 class ProductPage extends Component {
   constructor(props) {
@@ -36,7 +36,7 @@ class ProductPage extends Component {
     Promise.all([
       axios
         .get(
-          "https://simply-beauty-php.herokuapp.com/api/getProductByID.php?id=" +
+          "https://simplybeauty.000webhostapp.com/beautyPHP/api/getProductByID.php?id=" +
             this.props.id
         )
         .then((res) => {
@@ -45,7 +45,7 @@ class ProductPage extends Component {
 
       axios
         .get(
-          "https://simply-beauty-php.herokuapp.com/api/additionalInfo.php?id=" +
+          "https://simplybeauty.000webhostapp.com/beautyPHP/api/additionalInfo.php?id=" +
             this.props.id
         )
         .then((res) => {
@@ -53,7 +53,7 @@ class ProductPage extends Component {
         }),
 
       axios
-        .get("https://simply-beauty-php.herokuapp.com/api/getProductsMain.php")
+        .get("https://simplybeauty.000webhostapp.com/beautyPHP/api/getProductsMain.php")
         .then((res) => {
           this.setState({ relatedProducts: res.data });
         }),

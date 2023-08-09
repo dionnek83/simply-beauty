@@ -23,7 +23,7 @@ class Products_Carousel extends React.Component {
   //retrieves all hair products
   componentDidMount() {
     axios
-      .get("https://simply-beauty-php.herokuapp.com/api/getProductsMain.php")
+      .get("https://simplybeauty.000webhostapp.com/beautyPHP/api/getProductsMain.php")
       .then((res) => {
         this.setState({ data: res.data });
       });
