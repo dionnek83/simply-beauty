@@ -1,6 +1,6 @@
 # Simply Beauty Ecommerce website 
 
-This project was created with PHP, SQL and React and I designed the website using Figma.
+This project was created with PHP, SQL and React and I designed the website using Figma. This is the frontend code and this project was deployed on Netlify and the API was deployed on 000Webhost and the code for that is located in the beautyPHP repository. 
 
 ![image](https://github.com/dionnek83/simply-beauty/assets/42995303/d14f3ac7-ab61-41dc-a8f9-24a0be750cb0)
 
