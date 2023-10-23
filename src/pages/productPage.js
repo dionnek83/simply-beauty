@@ -10,7 +10,9 @@ import {
 import "react-notifications/lib/notifications.css";
 
 const API_PATH =
-  "https://simplybeauty.000webhostapp.com/beautyPHP/api/addToCart.php";
+ "https://simplybeauty.000webhostapp.com/beautyPHP/api/addToCart.php/";
+
+//const API_PATH = "http://localhost/beautyPHP/api/addToCart.php";
 
 class ProductPage extends Component {
   constructor(props) {
@@ -68,34 +70,42 @@ class ProductPage extends Component {
         3000
       );
     } else {
-      axios({
-        method: "post",
-        url: `${API_PATH}`,
-        headers: {
-          "content-type": "application/json",
-        },
-        data: {
+      fetch(`${API_PATH}`, {
+        method: 'POST',
+        body: JSON.stringify({
           Total_Cost: quantity * price,
-          Quantity: quantity,
-          Price_Per_Product: price,
-          Product_ID: this.state.product_id,
-          Hair_Length_ID: this.state.length_ID,
+                Quantity: quantity,
+                Price_Per_Product: price,
+                Product_ID: this.state.product_id,
+                Hair_Length_ID: this.state.length_ID,
+              
+        }),
+        headers: {
+           'Accept': 'application/json',
+
         },
-      })
-        .then((result) => {
-          if (result.data[0] !== "success") {
-            NotificationManager.error(result.data[0], "Error adding to cart ");
-          } else {
-            NotificationManager.success(
-              "Successfully added product to cart",
-              "Add product to Cart"
-            );
-          }
-        })
-        .catch((e) => {
-          console.log(e);
-        });
-    }
+     })
+     .then((result) => {
+            if (result.status !== 200) {
+              NotificationManager.error(result.data[0], "Error adding to cart ");
+            } else {
+              NotificationManager.success(
+                "Successfully added product to cart",
+                "Add product to Cart"
+              );
+            }
+            console.log(result.status);
+          })
+          .catch((e) => {
+            console.log(e);
+          });
+
+     
+      
+
+        }
+
+   
   }
 
   clickHappens(id, Length, price, product_id) {

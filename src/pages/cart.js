@@ -17,6 +17,7 @@ class Cart extends React.Component {
   componentDidMount() {
     Promise.all([
       axios
+      //.get("http://localhost/beautyPHP/api/getCartProducts.php")
         .get("https://simplybeauty.000webhostapp.com/beautyPHP/api/getCartProducts.php")
         .then((res) => {
           this.setState({ data: res.data });
