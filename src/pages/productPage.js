@@ -68,20 +68,31 @@ class ProductPage extends Component {
         3000
       );
     } else {
-      axios({
-        method: "post",
-        url: `${API_PATH}`,
-        headers: {
-          "content-type": "application/json",
-        },
-        data: {
-          Total_Cost: quantity * price,
+       axios.post(`${API_PATH}`, {
+        Total_Cost: quantity * price,
           Quantity: quantity,
           Price_Per_Product: price,
           Product_ID: this.state.product_id,
           Hair_Length_ID: this.state.length_ID,
-        },
-      })
+    })
+//     .then((response) => {
+//       console.log(response);
+//     });
+// });
+      // axios({
+      //   method: "post",
+      //   url: `${API_PATH}`,
+      //   headers: {
+      //     "content-type": "application/json",
+      //   },
+      //   data: {
+      //     Total_Cost: quantity * price,
+      //     Quantity: quantity,
+      //     Price_Per_Product: price,
+      //     Product_ID: this.state.product_id,
+      //     Hair_Length_ID: this.state.length_ID,
+      //   },
+      // })
         .then((result) => {
           if (result.data[0] !== "success") {
             NotificationManager.error(result.data[0], "Error adding to cart ");
