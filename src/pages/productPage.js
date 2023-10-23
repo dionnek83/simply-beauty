@@ -94,7 +94,7 @@ class ProductPage extends Component {
                 "Add product to Cart"
               );
             }
-            console.log(result.status);
+       
           })
           .catch((e) => {
             console.log(e);
