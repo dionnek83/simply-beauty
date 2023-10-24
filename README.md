@@ -2,7 +2,6 @@
 
 This project was created with PHP, SQL and React and I designed the website using Figma. This is the frontend code and this project was deployed on Netlify and the API was deployed on 000Webhost and the code for that is located in the beautyPHP repository. 
 
-![image](https://github.com/dionnek83/simply-beauty/assets/42995303/05d773ae-2755-469b-9056-28e7f31c03b4)
 ![image](https://github.com/dionnek83/simply-beauty/assets/42995303/94343406-b519-4aaf-8faa-ebb0d6befcab)
 
 ## Homepage
@@ -51,13 +50,7 @@ Currently has no functionality.
 ![image](https://github.com/dionnek83/simply-beauty/assets/42995303/d202f0dc-bd93-4cbc-acf0-54f7ae094f53)
 
 
-## Shop All page 
 
-This page displays all the products in the database, however I'm still working on this page as well as the sub-pages. 
-
-![image](https://github.com/dionnek83/simply-beauty/assets/42995303/4339aa35-8615-43e3-8571-dbbaa0f9bb93)
-
-![image](https://github.com/dionnek83/simply-beauty/assets/42995303/87d9dd96-994e-40ae-9509-338f2de204cf)
 
 
 
