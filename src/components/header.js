@@ -45,6 +45,10 @@ const Header = (props) => {
 
       setSearchData(data);
 
+
+
+   
+
       history.push({
         pathname: "/search",
         state: {
@@ -55,6 +59,8 @@ const Header = (props) => {
       });
     };
 
+
+
     if (query) {
       search();
     } else {
@@ -62,6 +68,11 @@ const Header = (props) => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query]);
+  console.log(query)
+  console.log(searchData)
+
+
+  
 
   return (
     <>
@@ -91,7 +102,7 @@ const Header = (props) => {
                 onMouseLeave={onMouseLeave}
                 onClick={() => setClick(false)}
               >
-                <Link to="/shop" className="nav-link">
+                <Link to="/" className="nav-link">
                   Shop All
                 </Link>
                 {dropdown && <Dropdown />}
@@ -103,7 +114,7 @@ const Header = (props) => {
                 </Link>
               </li>
               <li onClick={() => setClick(false)}>
-                <Link to="/about" className="nav-link">
+                <Link to="/" className="nav-link">
                   Need Help ?
                 </Link>
               </li>
@@ -114,9 +125,9 @@ const Header = (props) => {
                   className="search"
                   placeholder="Search"
                   value={query}
-                  onChange={(e) => setQuery(e.target.value)}
+                  onChange={(e) => setQuery(e.target.value) }
                 ></input>
-                <button className="search-button">
+                <button className="search-button" >
                   <IoSearchOutline />
                 </button>
               </span>

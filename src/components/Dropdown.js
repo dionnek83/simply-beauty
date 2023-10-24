@@ -15,7 +15,7 @@ function Dropdown() {
       >
         <li className="nav-link">
           <Link
-            to="/lace"
+            to="/"
             onClick={() => setClick(false)}
             className="nav-link "
           >
@@ -24,7 +24,7 @@ function Dropdown() {
         </li>
         <li className="nav-link">
           <Link
-            to="/clip"
+            to="/"
             onClick={() => setClick(false)}
             className="nav-link "
           >
@@ -33,7 +33,7 @@ function Dropdown() {
         </li>
         <li className="nav-link">
           <Link
-            to="/bundles"
+            to="/"
             onClick={() => setClick(false)}
             className="nav-link "
           >

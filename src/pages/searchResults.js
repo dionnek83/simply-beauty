@@ -15,6 +15,8 @@ const SearchResults = (props) => {
     }
   }, [location.state.search]);
 
+  console.log(location.state.search)
+
   return (
     <div>
       <h1 className="search-title">
