@@ -39,7 +39,7 @@ const Header = (props) => {
     setSearchData([]);
     const search = async () => {
       const { data } = await axios.get(
-        "https://simplybeauty.000webhostapp.com/beautyPHP/api/search.php?query=" +
+        "https://www.dionne.infinityfreeapp.com/beautyPHP/api/search.php?query=" +
           query
       );
 
