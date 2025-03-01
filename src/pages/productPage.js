@@ -10,7 +10,7 @@ import {
 import "react-notifications/lib/notifications.css";
 
 const API_PATH =
- "https://simplybeauty.000webhostapp.com/beautyPHP/api/addToCart.php/";
+ "https://www.dionne.infinityfreeapp.com/beautyPHP/api/addToCart.php/";
 
 //const API_PATH = "http://localhost/beautyPHP/api/addToCart.php";
 
@@ -38,7 +38,7 @@ class ProductPage extends Component {
     Promise.all([
       axios
         .get(
-          "https://simplybeauty.000webhostapp.com/beautyPHP/api/getProductByID.php?id=" +
+          "https://www.dionne.infinityfreeapp.com/beautyPHP/api/getProductByID.php?id=" +
             this.props.id
         )
         .then((res) => {
@@ -47,7 +47,7 @@ class ProductPage extends Component {
 
       axios
         .get(
-          "https://simplybeauty.000webhostapp.com/beautyPHP/api/additionalInfo.php?id=" +
+          "https://www.dionne.infinityfreeapp.com/beautyPHP/api/additionalInfo.php?id=" +
             this.props.id
         )
         .then((res) => {
@@ -55,7 +55,7 @@ class ProductPage extends Component {
         }),
 
       axios
-        .get("https://simplybeauty.000webhostapp.com/beautyPHP/api/getProductsMain.php")
+        .get("https://www.dionne.infinityfreeapp.com/beautyPHP/api/getProductsMain.php")
         .then((res) => {
           this.setState({ relatedProducts: res.data });
         }),
