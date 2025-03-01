@@ -12,7 +12,7 @@ class Categories extends React.Component {
 
   componentDidMount() {
     axios
-      .get("https://simplybeauty.000webhostapp.com/beautyPHP/api/getCategories.php")
+      .get("https://www.dionne.infinityfreeapp.com/beautyPHP/api/getCategories.php")
       .then((res) => {
         this.setState({ data: res.data });
       });
