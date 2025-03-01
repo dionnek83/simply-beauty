@@ -14,7 +14,7 @@ class Shop extends React.Component {
 
   componentDidMount() {
     axios
-      .get("https://simplybeauty.000webhostapp.com/beautyPHP/api/getProductsMain.php")
+      .get("https://www.dionne.infinityfreeapp.com/beautyPHP/api/getProductsMain.php")
       .then((res) => {
         this.setState({ data: res.data });
       });
